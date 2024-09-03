@@ -1,0 +1,637 @@
+.catalog {
+  padding: 15px 0 70px;
+
+  &__box {
+    padding-top: 8px;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__list {
+    gap: $catalog-card-gap;
+  }
+
+  &__item {
+    min-height: 278px;
+
+    &_item3 {
+      order: 3;
+    }
+
+    &_item4 {
+      order: 4;
+    }
+  }
+
+  &__div {
+    &_item1 {
+      padding: 53px 0 16px;
+    }
+
+    &_item4 {
+      padding: 43px 0 16px;
+    }
+
+    &_item5 {
+      padding: 45px 0 16px;
+    }
+
+    &_item6 {
+      padding: 46px 0 16px;
+    }
+  }
+
+  &__holder {
+    &_item1 {
+      margin-bottom: 22px;
+    }
+
+    &_item4 {
+      left: 0;
+      margin-bottom: 12px;
+    }
+
+    &_item5,
+    &_item6 {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__pic {
+    &_item5 {
+      left: 0;
+    }
+  }
+
+  &__link {
+    padding: 9px 23px 8px;
+
+    &_item6 {
+      left: 0;
+    }
+  }
+}
+
+.cooperation {
+  padding: 19px 0 34px;
+  @include text-rubber;
+
+  &__title {
+    letter-spacing: 0.1px;
+  }
+
+  &__subtitle {
+    font-size: $title-small;
+  }
+
+  &__text {
+    font-size: $text-small-lg;
+  }
+}
+
+.feedback {
+  padding: 14px 0 65px;
+  @include text-rubber;
+
+  &__title {
+    margin-bottom: 5px;
+  }
+
+  &__left {
+    grid-column: span 6;
+  }
+
+  &__container {
+    &::after {
+      content: unset;
+    }
+  }
+
+  &__btn {
+    padding: 16px 34px 16px 33px;
+  }
+
+  &__checkbox-span,
+  &__checkbox-link {
+    font-size: $text-small;
+  }
+
+  &__checkbox-span {
+    padding-left: 20px;
+
+    &::before,
+    &::after {
+      top: 0;
+    }
+  }
+}
+
+.footer {
+  &__container {
+    row-gap: $footer-gap;
+  }
+
+  &__top {
+    padding: 24px 0 22px;
+  }
+
+  &__left {
+    justify-content: center;
+    row-gap: $footer-left-gap;
+  }
+
+  &__pic {
+    margin-right: 0;
+    padding-top: 0;
+    padding-right: 1px;
+  }
+
+  &__social-list {
+    justify-content: center;
+    padding: 0;
+    padding-left: 1px;
+    width: 100%;
+  }
+
+  &__nav {
+    justify-self: start;
+    width: 100%;
+  }
+
+  &__copyright {
+    @include text-rubber;
+  }
+}
+
+.header {
+  overflow-x: unset;
+  padding-bottom: 12px;
+
+  &_index {
+    padding-bottom: 32px;
+  }
+
+  &__container {
+    gap: $header-gap;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &:not(:first-child) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    grid-column: span 6;
+    justify-self: center;
+    order: 1;
+  }
+
+  &__aside {
+    order: 2;
+  }
+
+  &__phone {
+    grid-column: span 4;
+    order: 3;
+  }
+
+  &__box {
+    grid-column: span 2;
+    align-self: start;
+    gap: $header-box-gap;
+    order: 4;
+    padding: 11px 0 0;
+  }
+
+  &__cart-count {
+    padding: 1.5px 4px 2px;
+  }
+
+  &__nav {
+    justify-self: auto;
+  }
+}
+
+.hero {
+  padding: 0 0 40px;
+  background-image: none;
+
+  &__content {
+    position: relative;
+    margin-bottom: 32px;
+    padding: 13px 0 124px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -12px;
+      right: -12px;
+      bottom: 0;
+      background-image: url("../img/hero-320-x2.webp");
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+    padding-left: 18px;
+    max-width: 85%;
+    font-size: $title-big;
+    line-height: 28px;
+  }
+}
+
+.high-rating {
+  padding: 14px 0 70px;
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    gap: $high-rating-gap;
+  }
+
+  &__item {
+    min-height: 278px;
+  }
+
+  &__div {
+    &_item1 {
+      padding: 53px 0 16px;
+    }
+
+    &_item4 {
+      padding: 43px 0 16px;
+    }
+
+    &_item5 {
+      padding: 45px 0 16px;
+    }
+
+    &_item6 {
+      padding: 46px 0 16px;
+    }
+  }
+
+  &__subtitle {
+    &_item6 {
+      padding-left: 2px;
+    }
+  }
+
+  &__holder {
+    &_item1 {
+      margin-bottom: 21px;
+    }
+
+    &_item4 {
+      margin-bottom: 11px;
+    }
+
+    &_item5 {
+      margin-bottom: 14px;
+    }
+
+    &_item6 {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__link {
+    &_item6 {
+      left: 0;
+    }
+  }
+}
+
+.oxford {
+  padding: 0 0 33px;
+  background-color: transparent;
+  background-image: unset;
+
+  &__content {
+    position: relative;
+    margin-bottom: 32px;
+    padding: 30px 0 111px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -12px;
+      right: -12px;
+      bottom: 0;
+      background-color: $black;
+      background-image: url("../img/oxford-320.webp");
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+
+  &__title {
+    padding-top: 0;
+  }
+
+  &__title,
+  &__text {
+    line-height: 120%;
+  }
+
+  &__text {
+    margin-bottom: 0;
+    max-width: 60%;
+    font-size: $text-normal;
+  }
+
+  &__link {
+    padding: 19px 84px 18px 85px;
+  }
+}
+
+.product {
+  padding: 9px 0 25px;
+
+  &__container {
+    gap: $product-gap;
+  }
+
+  &__buy {
+    padding: 0 0 3px;
+  }
+
+  &__title {
+    margin-bottom: 7px;
+    font-size: $title-small;
+  }
+
+  &__reting {
+    margin-bottom: 5px;
+    padding-left: 23px;
+    font-size: $text-normal;
+    background-image: url(../img/star.webp);
+  }
+
+  &__text {
+    margin-bottom: 16px;
+    font-size: $text-small-lg;
+  }
+
+  &__price {
+    margin-bottom: 17px;
+    font-size: $title-normal;
+  }
+
+  &__buy-btn {
+    padding: 16px 66px 15px 66.1px;
+  }
+
+  &__wrap {
+    align-items: center;
+  }
+
+  &__about {
+    grid-column: span 6;
+  }
+
+  &__subtitle {
+    font-size: $title-small;
+    margin-bottom: 6px;
+  }
+
+  &__img-box {
+    gap: $product-img-box-gap;
+  }
+
+  &__subpic {
+    &_1 {
+      position: relative;
+      left: -1px;
+    }
+  }
+
+  &__list {
+    gap: $product-settings-row-gap;
+    padding: 20px 0 4px;
+  }
+
+  &__item {
+    flex-wrap: wrap;
+    row-gap: $product-item-gap;
+  }
+
+  &__left {
+    font-size: $text-tiny;
+  }
+
+  &__right {
+    font-size: $text-small-lg;
+  }
+}
+
+.container {
+  padding: 0 11px;
+}
+
+.similar {
+  padding: 52px 0 70px;
+
+  &__list {
+    gap: $similar-gap;
+  }
+
+  &__item {
+    min-height: 278px;
+  }
+
+  &__div {
+    &_item1 {
+      padding: 56px 0 16px;
+    }
+
+    &_item2 {
+      padding: 48px 0 16px;
+    }
+  }
+
+  &__holder {
+    &_item2 {
+      margin-bottom: 7px;
+    }
+  }
+
+  &__pic {
+    &_item2 {
+      left: 0;
+    }
+  }
+}
+
+.special {
+  padding: 11px 0 35px;
+
+  &__title {
+    margin-bottom: 26px;
+    line-height: 24px;
+  }
+
+  &__list {
+    gap: $card-gap;
+  }
+
+  &__item {
+    grid-column: span 6;
+
+    &_3,
+    &_4,
+    &_5,
+    &_6 {
+      display: block;
+    }
+  }
+
+  &__div {
+    padding: 30px 0;
+  }
+
+  &__holder {
+    margin-bottom: 17px;
+    height: 252px;
+
+    &_item2 {
+      margin-bottom: 49px;
+      height: 220px;
+    }
+
+    &_item5 {
+      margin-bottom: 56px;
+      height: 213px;
+    }
+
+    &_item4,
+    &_item6 {
+      position: relative;
+      left: -1px;
+    }
+  }
+
+  &__inner {
+    padding: 0 30px;
+  }
+
+  &__subtitle {
+    font-size: $title-normal;
+    margin-bottom: 12px;
+
+    &_item6 {
+      letter-spacing: 0.2px;
+    }
+  }
+
+  &__model {
+    &_item6 {
+      letter-spacing: 0;
+    }
+  }
+
+  &__price,
+  &__old {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    padding: 16px 33px 15px;
+
+    &_item2,
+    &_item3,
+    &_item6 {
+      padding: 16px 34px 15px;
+    }
+  }
+
+  &__discount {
+    &_item4,
+    &_item6 {
+      padding: 9px 5px 9px 25px;
+    }
+
+    &_item5 {
+      padding: 9px 5px 9px 16px;
+    }
+  }
+}
+
+.top-categories {
+  padding: 14px 0 35px;
+
+  &__title {
+    margin-bottom: 22px;
+  }
+
+  &__list {
+    gap: $top-categories-gap;
+  }
+
+  &__item {
+    min-height: 206px;
+
+    &_1 {
+      min-height: 332px;
+    }
+  }
+}
+
+.useful {
+  padding: 10px 0 33px;
+
+  &__list {
+    gap: $useful-gap;
+  }
+
+  &__subtitle {
+    padding: 30px 27px 18px 30px;
+
+    &_2,
+    &_3 {
+      padding-bottom: 37px;
+    }
+
+    &_4 {
+      padding-bottom: 17px;
+    }
+
+    &_5 {
+      padding-bottom: 37px;
+    }
+  }
+
+  &__item {
+    grid-column: span 6;
+
+    &_3,
+    &_4,
+    &_5 {
+      display: block;
+    }
+  }
+
+  &__subtitle {
+    font-size: $title-small;
+  }
+
+  &__link {
+    padding: 16px 34px 16px 33px;
+  }
+}

@@ -1,0 +1,33 @@
+.oxford {
+  padding: 59px 0 150px;
+  background-color: $black;
+  background-image: url("../img/oxford-1920.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include text-rubber;
+
+  &__title {
+    margin: 0;
+    padding-top: 96px;
+    line-height: 70px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 50px;
+    max-width: 508px;
+    line-height: 57px;
+    letter-spacing: 0.06px;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $btn-wrap-gap;
+  }
+
+  &__link {
+    padding: 19px 30px;
+  }
+}

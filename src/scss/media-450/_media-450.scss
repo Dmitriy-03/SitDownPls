@@ -1,0 +1,17 @@
+.hero {
+  &__content {
+    &::after {
+      background-image: url("../img/hero-320.webp");
+    }
+  }
+}
+
+.product {
+  &__left {
+    width: 100%;
+
+    &::after {
+      content: none;
+    }
+  }
+}

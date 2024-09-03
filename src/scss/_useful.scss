@@ -1,0 +1,57 @@
+.useful {
+  padding: 6px 0;
+
+  &__title {
+    margin-bottom: 23px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: $useful-gap;
+  }
+
+  &__item {
+    grid-column: span 6;
+  }
+
+  &__div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    height: 100%;
+    min-height: 676px;
+    background-color: $grey-light;
+    overflow: hidden;
+    @include text-rubber;
+  }
+
+  &__pic {
+    margin-bottom: 1px;
+    max-height: 426px;
+  }
+
+  &__img {
+    @include width-height(100%, 100%);
+    object-fit: cover;
+  }
+
+  &__subtitle {
+    margin-bottom: auto;
+    padding: 14px 27px 10px 30px;
+    line-height: 33px;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $btn-wrap-gap;
+    padding: 0 30px;
+  }
+
+  &__link {
+    padding: 16px 34px 15px 33px;
+    max-width: max-content;
+  }
+}

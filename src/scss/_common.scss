@@ -1,0 +1,1169 @@
+.arrow-link {
+  position: relative;
+  padding: 5px 30px 5px 0;
+  max-width: max-content;
+
+  &::after,
+  &__svg {
+    position: absolute;
+    top: 50%;
+    right: 3px;
+    @include width-height(22px, 22px);
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    border: 2px solid $medium-purple;
+    border-radius: 100%;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    z-index: 0;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible::after {
+    background-color: $mauve;
+  }
+
+  &:focus-visible .arrow-link__svg {
+    stroke: $white;
+  }
+
+  @media (any-hover: hover) {
+    &:hover:not(:focus-visible):not(:active)::after {
+      border-color: transparent;
+      background-color: $medium-purple;
+    }
+
+    &:hover:not(:focus-visible):not(:active) .arrow-link__svg {
+      stroke: $white;
+    }
+  }
+
+  &:active:not(:focus-visible)::after {
+    border-color: transparent;
+    background-color: $primary-shade;
+  }
+
+  &:active:not(:focus-visible) .arrow-link__svg {
+    stroke: $white;
+  }
+
+  &__svg {
+    stroke: #a65cf0;
+    stroke-width: 2;
+    transition: stroke 0.3s ease-in-out;
+    z-index: 1;
+  }
+}
+
+.breadcrumb {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+  }
+
+  &__item {
+    &:not(:last-child)::after {
+      content: "/";
+      position: relative;
+      padding-right: 4px;
+      font-size: $text-small;
+      color: $grey;
+      z-index: 2;
+    }
+  }
+
+  &__link {
+    margin-right: 5px;
+
+    &_1 {
+      margin-right: 7px;
+    }
+
+    &_3 {
+      margin-right: 4px;
+    }
+
+    &_4 {
+      margin-right: 6px;
+    }
+  }
+}
+
+.btn {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  @include text-rubber;
+
+  &_big {
+    padding: 19px 47px 19px 49px;
+    font-weight: 700;
+    color: $white;
+  }
+
+  &_ambush {
+    padding: 16px 33px 16px 33px;
+    border-color: $medium-purple;
+    font-weight: 600;
+    color: $medium-purple;
+    transition: color 0.3s ease-in-out;
+
+    &:focus-visible {
+      color: $white;
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active) {
+        color: $white;
+        background-color: $medium-purple;
+      }
+    }
+
+    &:active:not(:focus-visible) {
+      border-color: transparent;
+      color: $white;
+      background-color: $primary-shade;
+    }
+  }
+
+  &_ambush,
+  &_medium-purple {
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+
+    &:focus-visible {
+      outline: none;
+      background-color: $mauve;
+    }
+  }
+
+  &_medium-purple {
+    background-color: $medium-purple;
+
+    &:focus-visible {
+      border-color: $primary-shade;
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active):not(:disabled) {
+        background-color: $mauve;
+      }
+    }
+
+    &:active:not(:focus-visible):not(:disabled) {
+      background-color: $primary-shade;
+    }
+
+    &:disabled {
+      color: $grey;
+      background-color: $md-grey;
+      cursor: not-allowed;
+    }
+  }
+
+  &_semi-bold {
+    font-weight: 600;
+  }
+
+  &_transparent {
+    padding: 7px 29px;
+    border: 1px solid transparent;
+    color: $medium-purple;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+      color 0.3s ease-in-out;
+
+    &:focus-visible {
+      border-color: $medium-purple;
+      outline: none;
+      background-color: $pink-light;
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active):not(:disabled) {
+        border-color: $medium-purple;
+      }
+    }
+
+    &:active:not(:focus-visible) {
+      border-color: $primary-shade;
+      color: $primary-shade;
+    }
+  }
+}
+
+.card-categorie {
+  display: flex;
+  flex-direction: column;
+  padding: 27px 0;
+  border-radius: 10px;
+  height: 100%;
+  background-color: $grey-light;
+  @include text-rubber;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $card-categorie-gap;
+    margin: 0;
+
+    &_4 {
+      gap: 10px 26px;
+    }
+
+    &_5 {
+      gap: 10px 42px;
+    }
+  }
+
+  &__list,
+  &__title {
+    padding: 0 30px;
+  }
+
+  &__title {
+    margin-bottom: 31px;
+    padding-bottom: 16px;
+  }
+
+  &__pic {
+    margin-bottom: 27px;
+    max-width: 100%;
+    height: 202px;
+
+    &_lg {
+      height: 308px;
+    }
+
+    &_4 {
+      position: relative;
+      left: -1px;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $btn-wrap-gap;
+    padding: 0 30px;
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0 30px;
+  border-radius: 10px;
+  height: 100%;
+  background-color: $grey-light;
+  @include text-rubber;
+
+  &__holder {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 161px;
+    font-size: 0;
+  }
+
+  &__pic {
+    align-self: flex-end;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0 30px;
+  }
+
+  &__title {
+    margin-bottom: auto;
+    line-height: 31px;
+  }
+
+  &__box {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: $card-price-gap;
+    margin-bottom: 23px;
+    padding-top: 10px;
+  }
+
+  &__price {
+    margin-bottom: 23px;
+    padding-top: 10px;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $btn-wrap-gap;
+  }
+
+  &__discount {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding: 9px 5px 9px 18px;
+    min-width: 82px;
+    background-color: $crusta;
+  }
+
+  &__discount-icon {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10px;
+    height: 100%;
+    z-index: 1;
+  }
+}
+
+@include custom-checkbox;
+
+.checkbox {
+  &__input {
+    &:focus-visible + .checkbox__span {
+      color: $medium-purple;
+      text-decoration-color: $medium-purple;
+    }
+
+    &:active:not(:focus-visible) + .checkbox__span {
+      text-decoration-color: $primary-shade;
+    }
+
+    &:active:not(:focus-visible) + .checkbox__span,
+    &:active:not(:focus-visible) + .checkbox__span .checkbox__link {
+      color: $primary-shade;
+    }
+  }
+
+  &__span {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    transition: color 0.3s ease-in-out, text-decoration-color 0.3s ease-in-out;
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active) {
+        color: $medium-purple;
+        text-decoration-color: $medium-purple;
+      }
+    }
+  }
+}
+
+.footer-menu {
+  justify-self: end;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $footer-menu-gap;
+    padding: 2px 2px;
+  }
+
+  &__item {
+    &_2 {
+      min-width: 154px;
+    }
+
+    &_3 {
+      min-width: 141px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2px;
+  }
+
+  &__sublist {
+    display: flex;
+    flex-direction: column;
+    gap: $footer-sublist-gap;
+  }
+}
+
+.input {
+  &::placeholder {
+    opacity: 1;
+  }
+
+  &_long {
+    transition: outline-color 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+
+    &::placeholder {
+      color: $grey;
+    }
+
+    &:focus {
+      outline-color: $medium-purple;
+      background-color: $pink-light;
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus) {
+        background-color: $md-grey;
+      }
+    }
+  }
+
+  &_short {
+    padding: 0 10px 0 12px;
+    border: 1px solid $grey;
+    border-radius: 2px;
+    appearance: textfield;
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      appearance: none;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $medium-purple;
+      background-color: $pink-violet;
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus) {
+        border-color: $medium-purple;
+      }
+    }
+
+    &:active {
+      border-color: $primary-shade;
+    }
+  }
+
+  &_short,
+  &_short::placeholder {
+    color: $grey-shade;
+  }
+}
+
+.link {
+  &_grey {
+    position: relative;
+    display: inline-block;
+    outline: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    z-index: 1;
+
+    @include left-right-pseudo(10px);
+
+    &:focus-visible {
+      color: $primary-shade;
+
+      &::before {
+        background-color: $pink-violet;
+      }
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active) {
+        color: $medium-purple;
+      }
+    }
+
+    &:active:not(:focus-visible) {
+      color: $primary-shade;
+    }
+  }
+
+  &_underline {
+    outline: none;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.3s ease-in-out;
+
+    &:focus-visible {
+      text-decoration-color: $medium-purple;
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active) {
+        text-decoration-color: $medium-purple;
+      }
+    }
+
+    &:active:not(:focus-visible) {
+      color: $primary-shade;
+      text-decoration-color: $primary-shade;
+    }
+  }
+
+  &_short {
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    &:focus-visible {
+      outline: none;
+      color: $crusta;
+      background-color: $bone;
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active) {
+        color: $secondary-light;
+      }
+    }
+
+    &:active:not(:focus-visible) {
+      color: $primary-shade;
+    }
+  }
+}
+
+.logo {
+  align-self: center;
+  padding: 4px 0 0;
+  max-width: max-content;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav {
+  padding: 10px 0 6px 1px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $nav-gap;
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    outline: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    z-index: 1;
+
+    @include left-right-pseudo(10px);
+
+    &:focus-visible {
+      color: $black;
+
+      &::before {
+        background-color: $pink-violet;
+      }
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active) {
+        color: $medium-purple;
+      }
+    }
+
+    &:active:not(:focus-visible) {
+      color: $primary-shade;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $pagination-gap;
+    font-size: 0;
+  }
+
+  &__active,
+  &__link {
+    display: block;
+    border: 2px solid $medium-purple;
+    border-radius: 10px;
+    padding: 5px 9px 5px 10px;
+  }
+
+  &__active {
+    border-color: transparent;
+    background-color: $primary-shade;
+  }
+}
+
+.phone {
+  padding: 15px 0 17px;
+
+  &__link {
+    position: relative;
+    padding-left: 23px;
+    outline: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    &:focus-visible {
+      background-color: $bone;
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active) {
+        color: $secondary-light;
+      }
+
+      &:hover:not(:focus-visible):not(:active) .phone__icon {
+        fill: $secondary-light;
+      }
+    }
+
+    &:active:not(:focus-visible) {
+      color: $secondary-shade;
+    }
+
+    &:active:not(:focus-visible) .phone__icon {
+      fill: $secondary-shade;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    @include width-height(22px, 22px);
+    fill: $crusta;
+    transition: fill 0.3s ease-in-out;
+  }
+}
+
+.rating {
+  position: absolute;
+  top: 32px;
+  left: 30px;
+  display: block;
+  padding-left: 23px;
+  background-image: url("../img/star.webp");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.search {
+  position: relative;
+
+  &__input {
+    padding: 13px 80px 11px 60px;
+    border: none;
+    outline: 2px solid transparent;
+    border-radius: 10px;
+    @include width-height(100%, 60px);
+    color: $black;
+    background-color: $grey-light;
+    transition: outline-color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+  }
+
+  &__icon {
+    &_magnifier {
+      position: absolute;
+      top: 20px;
+      left: 32px;
+      @include width-height(20px, 20px);
+    }
+
+    &_search-arrow {
+      fill: $white;
+      stroke: $medium-purple;
+      stroke-width: 2;
+      transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 14px;
+    right: 33px;
+    z-index: 1;
+
+    &,
+    .search__icon_search-arrow {
+      @include width-height(32px, 32px);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 2px solid $medium-purple;
+      border-radius: 100%;
+      background-color: $white;
+      transition: border-color 0.3s ease-in-out,
+        background-color 0.3s ease-in-out;
+      z-index: -1;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:focus-visible .search__icon_search-arrow {
+      fill: $mauve;
+      stroke: $white;
+    }
+
+    &:focus-visible::after {
+      background-color: $mauve;
+    }
+
+    @media (any-hover: hover) {
+      &:hover:not(:focus-visible):not(:active):not(:disabled):after {
+        background-color: $medium-purple;
+      }
+
+      &:hover:not(:focus-visible):not(:active):not(:disabled)
+        .search__icon_search-arrow {
+        fill: $medium-purple;
+        stroke: $white;
+      }
+    }
+
+    &:active:not(:focus-visible):not(:disabled) .search__icon_search-arrow {
+      fill: $primary-shade;
+      stroke: $white;
+    }
+
+    &:active:not(:focus-visible):not(:disabled):after {
+      background-color: $primary-shade;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+
+      &::after {
+        border-color: $md-grey;
+      }
+
+      & .search__icon_search-arrow {
+        stroke: $md-grey;
+      }
+    }
+  }
+}
+
+.text {
+  font-size: $text-normal;
+  font-weight: 400;
+
+  &_tiny {
+    font-size: $text-tiny;
+  }
+
+  &_small {
+    font-size: $text-small;
+  }
+
+  &_big {
+    font-size: $text-big;
+  }
+
+  &_huge {
+    font-size: $text-huge;
+  }
+
+  &_big-cost {
+    font-size: $text-big-cost;
+  }
+
+  &_white {
+    color: $white;
+  }
+
+  &_crusta {
+    color: $crusta;
+  }
+
+  &_grey {
+    color: $grey;
+  }
+
+  &_black {
+    color: $black;
+  }
+
+  &_grey-shade {
+    color: $grey-shade;
+  }
+
+  &_medium-purple {
+    color: $medium-purple;
+  }
+
+  &_primary-shade {
+    color: $primary-shade;
+  }
+
+  &_semi-bold {
+    font-weight: 600;
+  }
+
+  &_bold {
+    font-weight: 700;
+  }
+
+  &_line-through {
+    @include line-through;
+  }
+}
+
+.title {
+  font-size: $title-normal;
+  font-weight: 400;
+  color: $black;
+  @include text-rubber;
+
+  &_huge {
+    font-size: $title-huge;
+  }
+
+  &_big {
+    font-size: $title-big;
+  }
+
+  &_small {
+    font-size: $title-small;
+    margin: 0;
+    margin-top: 17px;
+    margin-bottom: 13px;
+  }
+
+  &_small-sm {
+    font-size: $title-small-sm;
+  }
+
+  &_tiny {
+    margin: 0;
+    margin-bottom: 3px;
+    margin-top: 2px;
+    font-size: $title-tiny;
+  }
+
+  &_grey {
+    color: $grey;
+  }
+
+  &_grey-shade {
+    color: $grey-shade;
+  }
+
+  &_white {
+    color: $white;
+  }
+
+  &_gold {
+    color: $gold;
+  }
+
+  &_crusta {
+    color: $crusta;
+  }
+
+  &_semi-bold {
+    font-weight: 600;
+    margin-bottom: 9px;
+  }
+
+  &_bold {
+    font-weight: 700;
+  }
+
+  &_black {
+    font-weight: 900;
+  }
+}
+
+.you-get {
+  padding: 19px 0 16px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 8px;
+    letter-spacing: 0.06px;
+  }
+
+  &__text {
+    margin: 0;
+    line-height: 150%;
+  }
+
+  &__item {
+    padding: 5px 0 0 38px;
+    max-width: 49%;
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    background-size: 25px 25px;
+
+    &_1 {
+      background-image: url("../img/sprite.svg#network");
+    }
+
+    &_2 {
+      background-image: url("../img/sprite.svg#briefcase");
+    }
+
+    &_3 {
+      background-image: url("../img/sprite.svg#git-pull-request");
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 7px;
+    }
+  }
+}
+
+.your-benefits {
+  padding: 20px 0 16px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    letter-spacing: 0.06px;
+  }
+
+  &__subtitle {
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    margin: 0;
+    max-width: 67%;
+    line-height: 181%;
+    letter-spacing: 0.04px;
+  }
+}
+
+.mini-oxford {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  min-height: 360px;
+  background-color: $black;
+  @include text-rubber;
+
+  &::before {
+    content: "";
+    display: block;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 190px;
+    background-image: url("../img/oxford-mini-1920.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0px 30px 27px;
+  }
+
+  &__title {
+    margin: 33px 0 0px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 10px;
+    max-width: 199px;
+    line-height: 22px;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $btn-wrap-gap;
+  }
+}
+
+.aside-left {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 64px;
+  @include text-rubber;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 23px;
+    letter-spacing: 0.1px;
+  }
+
+  &__list {
+    margin-bottom: auto;
+  }
+
+  &__item:not(:last-of-type) {
+    margin-bottom: 29px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 11px;
+
+    &_2 {
+      margin-bottom: 10px;
+    }
+
+    &_3 {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__sublist {
+    display: flex;
+    flex-direction: column;
+    gap: $aside-left-sublist-gap;
+  }
+
+  &__checkbox-span {
+    padding-left: 32px;
+    line-height: 21px;
+  }
+
+  &__checkbox-span::after {
+    top: 1px;
+    left: 0;
+    @include width-height(20px, 20px);
+    background-size: 21px 21px;
+  }
+
+  &__checkbox-span::before {
+    top: 0;
+    left: -1px;
+    @include width-height(21px, 22px);
+    background-size: 20px 23px;
+  }
+
+  &__price {
+    padding: 0 5px;
+
+    &:first-of-type {
+      padding: 0 6px 0 0;
+    }
+  }
+
+  &__input {
+    @include width-height(86px, 30px);
+  }
+}
+
+.aside {
+  position: relative;
+  padding: 15px 0 17px;
+
+  @include left-right-pseudo-all;
+
+  &,
+  &::before,
+  &::after {
+    background-color: $grey-light;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $aside-gap;
+  }
+}
+
+.suppliers {
+  padding: 16px 0;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    margin: 0;
+    max-width: 65.5%;
+    line-height: 180%;
+    letter-spacing: 0.02px;
+  }
+}
+
+.guarantees {
+  padding: 19px 0 16px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  &__list {
+    margin-bottom: 31px;
+    padding-left: 18px;
+  }
+
+  &__item {
+    &::marker {
+      color: $crusta;
+      font-size: $text-normal;
+      font-weight: 600;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    padding-left: 9px;
+    max-width: 65%;
+    line-height: 180%;
+  }
+
+  &__desc {
+    padding: 22px 10px 22px 110px;
+    max-width: 65%;
+    min-height: 116px;
+    line-height: 150%;
+    background-image: url("../img/guarantees-1920.webp");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 77px 116px;
+  }
+}

@@ -1,0 +1,397 @@
+.title {
+  font-size: $title-normal;
+  &_small {
+    margin: 0px 0 13px;
+  }
+  &_tiny {
+    margin: 0px 0 3px;
+  }
+}
+
+.aside {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  height: 16px;
+  background-color: $white;
+
+  &::before,
+  &::after {
+    content: unset;
+  }
+
+  &__list {
+    display: none;
+  }
+
+  @include pseudo-all-center;
+
+  &::before {
+    top: 100%;
+    height: 1px;
+    background-color: $grey-light;
+  }
+}
+
+.aside-left {
+  &__subtitle {
+    font-size: $title-small;
+  }
+
+  &__list {
+    gap: $aside-left-list-gap;
+  }
+
+  &__item {
+    min-width: unset;
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+
+    &_3 {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.btn {
+  &_big {
+    padding: 19px 102px 18px 103px;
+  }
+
+  &_ambush {
+    padding: 9px 23px 9px;
+    font-size: $text-normal;
+  }
+}
+
+.card {
+  padding: 48px 0 16px;
+
+  &__holder {
+    margin-bottom: 17px;
+    max-height: 266px;
+    height: unset;
+  }
+
+  &__inner {
+    padding: 0px 16px;
+  }
+
+  &__title {
+    font-size: $title-small;
+    line-height: 130%;
+  }
+
+  &__price {
+    padding-top: 5px;
+    margin-bottom: 16px;
+  }
+}
+
+.card-categorie {
+  padding: 15px 0 16px;
+
+  &_1 {
+    padding: 30px 0 16px;
+  }
+
+  &__list {
+    gap: $card-categorie-gap;
+    margin-bottom: 4px;
+
+    &_1 {
+      margin-bottom: 13px;
+    }
+
+    &_4 {
+      margin-bottom: 2px;
+      max-width: 85%;
+    }
+  }
+
+  &__list,
+  &__title {
+    padding: 0 16px;
+  }
+
+  &__list_1,
+  &__title_1 {
+    padding: 0 30px;
+  }
+
+  &__item {
+    font-size: 0;
+  }
+
+  &__link {
+    font-size: $text-tiny;
+    line-height: 100%;
+
+    &_item1 {
+      font-size: $text-small-lg;
+    }
+  }
+
+  &__title {
+    display: none;
+    margin-bottom: auto;
+
+    &_media-767 {
+      display: block;
+      margin: 0;
+      margin: 0 0 9px;
+    }
+  }
+
+  &__icon,
+  &__link-catalog::after {
+    top: unset;
+    right: 3px;
+    bottom: 3px;
+    transform: none;
+  }
+
+  &__icon_1,
+  &__link-catalog_1::after {
+    bottom: 7px;
+  }
+
+  &__icon_1,
+  &__link-catalog_1::after {
+    bottom: 6px;
+  }
+
+  &__icon_1,
+  &__link-catalog_1::after,
+  &__icon_2,
+  &__link-catalog_2::after,
+  &__icon_5,
+  &__link-catalog_5::after {
+    right: 2px;
+  }
+
+  &__icon_4,
+  &__link-catalog_4::after {
+    right: 5px;
+    bottom: 3px;
+  }
+
+  &__link-catalog {
+    display: none;
+    font-size: $title-small;
+
+    &_media-767 {
+      display: block;
+    }
+
+    &_1 {
+      font-size: $title-normal;
+    }
+  }
+
+  &__pic {
+    margin-bottom: 0;
+    height: 60%;
+
+    &_1 {
+      height: 74.15%;
+    }
+
+    &_4 {
+      height: 50.2%;
+    }
+  }
+}
+
+.footer-menu {
+  &__list {
+    justify-content: center;
+    gap: $footer-menu-gap;
+    padding: 0;
+  }
+
+  &__item {
+    min-width: 140px;
+  }
+
+  &__title {
+    font-size: $title-small;
+  }
+}
+
+.guarantees {
+  &__title {
+    margin-bottom: 14px;
+  }
+
+  &__list {
+    margin-bottom: 22px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &__text {
+    line-height: 179%;
+
+    &_2,
+    &_3 {
+      position: relative;
+    }
+
+    &_2 {
+      top: -2px;
+    }
+
+    &_3 {
+      top: -5px;
+    }
+  }
+
+  &__br {
+    display: block;
+  }
+
+  &__desc {
+    min-height: 54px;
+    padding: 5px 10px 5px 52px;
+    font-size: $text-normal;
+    background-image: url("../img/guarantees-320.webp");
+    background-size: 36px 54px;
+  }
+}
+
+.logo {
+  position: relative;
+  padding: 12px 1px 8px 0;
+
+  @include pseudo-all-center;
+
+  &::before {
+    top: 0;
+    bottom: 0;
+    background-color: $grey-light;
+  }
+}
+
+.nav {
+  position: relative;
+  margin: 0 -12px;
+  padding: 17px 0 12px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $grey-light;
+  }
+
+  &__list {
+    flex-wrap: nowrap;
+    gap: $nav-gap;
+    padding: 0 12px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.pagination {
+  @include text-rubber;
+
+  &__list {
+    position: relative;
+    left: -1px;
+  }
+
+  &__item {
+    &_3 {
+      position: relative;
+      left: -1px;
+    }
+  }
+
+  &__link {
+    padding: 5px 10px 5px 9px;
+  }
+}
+
+.phone {
+  padding: 15px 5px 15px 0;
+
+  @include text-rubber;
+}
+
+.phone {
+  padding: 15px 5px 15px 0;
+
+  @include text-rubber;
+}
+
+.rating {
+  top: 28px;
+  left: 16px;
+  padding-left: 19px;
+  font-size: $text-small;
+  background-image: url("../img/star-320.webp");
+}
+
+.search {
+  &__input {
+    padding: 13px 80px 11px 59px;
+  }
+}
+
+.suppliers {
+  padding: 14px 0 16px;
+
+  &__title {
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    line-height: 179%;
+    letter-spacing: 0;
+  }
+}
+
+.you-get {
+  padding: 17px 0 16px;
+
+  &__title {
+    margin: 0 0 9px;
+  }
+}
+
+.your-benefits {
+  padding: 18px 0 16px;
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: $title-tiny;
+    letter-spacing: 0.02px;
+  }
+
+  &__subtitle {
+    margin-bottom: 13px;
+    font-size: $title-small;
+  }
+
+  &__text {
+    max-width: 100%;
+    line-height: 179%;
+  }
+}

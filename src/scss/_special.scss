@@ -1,0 +1,75 @@
+.special {
+  padding: 42px 0 35px;
+
+  &__title {
+    margin-bottom: 23px;
+    letter-spacing: 0.03px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 78px);
+    gap: $card-gap;
+  }
+
+  &__item {
+    grid-column: span 3;
+    min-height: 511px;
+
+    &_wide {
+      grid-column: span 6;
+    }
+  }
+
+  &__div {
+    &_item2 {
+      background-image: url("../img/special-2-add-1920.webp");
+      background-repeat: no-repeat;
+      background-position: right 30px bottom 30px;
+    }
+  }
+
+  &__holder {
+    height: 252px;
+
+    &_item1 {
+      padding-right: 1px;
+    }
+
+    &_item2 {
+      padding-left: 6px;
+    }
+
+    &_item3 {
+      padding-left: 1px;
+    }
+  }
+
+  &__price,
+  &__old {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__wrap {
+    &_large {
+      max-width: 300px;
+    }
+  }
+
+  &__link {
+    &_item3 {
+      padding: 16px 36px 16px 33px;
+    }
+  }
+
+  &__discount {
+    &_item2 {
+      padding: 9px 5px 9px 16px;
+    }
+
+    &_item3 {
+      padding: 9px 5px 9px 26px;
+    }
+  }
+}
