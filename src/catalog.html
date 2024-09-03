@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SitDownPls/ Каталог</title>
+    <link
+      href="fonts/OpenSans-Regular.woff2"
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="img/favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/catalog-style.css" rel="stylesheet" />
+  </head>
+
+  <body class="page">
+    <header class="header">
+      <div class="container header__container">
+        <div class="phone header__phone">
+          <a
+            class="text text_small text_crusta phone__link"
+            href="tel:+74958854547"
+            aria-label="Телефон +7 (495) 885-45-47"
+          >
+            <svg class="phone__icon">
+              <use href="img/sprite.svg#phone"></use>
+            </svg>
+            +7 (495) 885-45-47
+          </a>
+        </div>
+        <aside class="aside header__aside">
+          <ul class="list-reset aside__list">
+            <li class="aside__item">
+              <a
+                class="text text_small text_grey link link_grey aside__link"
+                href="#"
+              >
+                О&nbsp;компании
+              </a>
+            </li>
+            <li class="aside__item">
+              <a
+                class="text text_small text_grey link link_grey aside__link"
+                href="cooperation.html#guarantees"
+              >
+                Гарантия и&nbsp;возврат
+              </a>
+            </li>
+            <li class="aside__item">
+              <a
+                class="text text_small text_grey link link_grey aside__link"
+                href="#"
+              >
+                Корпоративным клиентам
+              </a>
+            </li>
+            <li class="aside__item">
+              <a
+                class="text text_small text_grey link link_grey aside__link"
+                href="#"
+              >
+                Дизайн-решение
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <a class="block logo header__logo" href="index.html">
+          <picture class="block logo__pic">
+            <img class="logo__img" src="img/logo-1920.webp" alt="SitDownPls" />
+          </picture>
+        </a>
+        <nav class="nav header__nav">
+          <ul class="list-reset nav__list">
+            <li class="nav__item">
+              <a class="text text_black nav__link" href="catalog.html">
+                Каталог
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="text text_black nav__link" href="#"> Магазины </a>
+            </li>
+            <li class="nav__item">
+              <a class="text text_black nav__link" href="#"> Шоу-рум </a>
+            </li>
+            <li class="nav__item">
+              <a class="text text_black nav__link" href="#">
+                Доставка и&nbsp;оплата
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="text text_black nav__link" href="#"> Дисконт </a>
+            </li>
+            <li class="nav__item">
+              <a class="text text_black nav__link" href="#"> Контакты </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="search header__search">
+          <label class="search__label header__label">
+            <span class="visually-hidden"> Поиск </span>
+            <input
+              class="input input_long search__input text"
+              name="search"
+              type="text"
+              placeholder="Я хочу купить..."
+            />
+            <svg class="search__icon search__icon_magnifier">
+              <use href="img/sprite.svg#magnifier"></use>
+            </svg>
+          </label>
+          <button class="btn-reset search__btn" aria-label="Найти">
+            <svg class="search__icon search__icon_search-arrow">
+              <use href="img/sprite.svg#search-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__box">
+          <a
+            class="header__link header__link_user"
+            href="#"
+            aria-label="Вход в личный кабинет"
+          >
+            <svg class="header__icon header__icon_user">
+              <use href="img/sprite.svg#user"></use>
+            </svg>
+          </a>
+          <a
+            class="header__link header__link_cart"
+            href="#"
+            aria-label="Корзина, товаров 0"
+          >
+            <svg class="header__icon header__icon_cart">
+              <use href="img/sprite.svg#shopping-cart"></use>
+            </svg>
+            <span
+              class="text text_tiny text_white text_bold header__cart-count"
+            >
+              0
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="container header__container">
+        <nav class="breadcrumb header__breadcrumb" aria-label="Хлебные крошки">
+          <ul class="list-reset breadcrumb__list">
+            <li class="breadcrumb__item breadcrumb__item_1">
+              <a
+                class="text text_small text_grey link link_grey breadcrumb__link breadcrumb__link_1"
+                href="index.html"
+                >Главная</a
+              >
+            </li>
+            <li class="breadcrumb__item breadcrumb__item_2">
+              <a
+                class="text text_small text_grey link link_grey breadcrumb__link breadcrumb__link_2"
+                href="catalog.html"
+                >Каталог</a
+              >
+            </li>
+            <li class="breadcrumb__item breadcrumb__item_3">
+              <a
+                class="text text_small text_grey link link_grey breadcrumb__link breadcrumb__link_3"
+                href="#"
+                >Диваны</a
+              >
+            </li>
+            <li class="breadcrumb__item breadcrumb__item_4">
+              <span
+                class="text text_small text_primary-shade breadcrumb__active"
+                aria-current="page"
+              >
+                Прямые диваны
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="catalog">
+        <div class="container catalog__container">
+          <h1
+            class="none title title_small catalog__title catalog__title_media-1024"
+          >
+            Каталог
+          </h1>
+          <aside class="aside-left catalog__aside">
+            <h2 class="title title_small-sm aside-left__title">
+              Фильтровать&nbsp;по:
+            </h2>
+            <ul class="list-reset aside-left__list">
+              <li class="aside-left__item aside-left__item_1">
+                <h3
+                  class="title title_tiny title_semi-bold title_grey-shade aside-left__subtitle aside-left__subtitle_1"
+                >
+                  Цвет
+                </h3>
+                <ul class="list-reset aside-left__sublist">
+                  <li class="aside-left__subitem">
+                    <label class="checkbox aside-left__checkbox-label">
+                      <input
+                        class="checkbox__input aside-left__checkbox-input"
+                        type="checkbox"
+                        name="color-brown"
+                      />
+                      <span
+                        class="checkbox__span text text_grey-shade aside-left__checkbox-span"
+                      >
+                        Коричневый
+                      </span>
+                    </label>
+                  </li>
+                  <li class="aside-left__subitem">
+                    <label class="checkbox aside-left__checkbox-label">
+                      <input
+                        class="checkbox__input aside-left__checkbox-input"
+                        type="checkbox"
+                        name="color-black"
+                        checked
+                      />
+                      <span
+                        class="checkbox__span text text_grey-shade aside-left__checkbox-span"
+                      >
+                        Черный
+                      </span>
+                    </label>
+                  </li>
+                  <li class="aside-left__subitem">
+                    <label class="checkbox aside-left__checkbox-label">
+                      <input
+                        class="checkbox__input aside-left__checkbox-input"
+                        type="checkbox"
+                        name="color-blue"
+                      />
+                      <span
+                        class="checkbox__span text text_grey-shade aside-left__checkbox-span"
+                      >
+                        Синий
+                      </span>
+                    </label>
+                  </li>
+                  <li class="aside-left__subitem">
+                    <label class="checkbox aside-left__checkbox-label">
+                      <input
+                        class="checkbox__input aside-left__checkbox-input"
+                        type="checkbox"
+                        name="color-white"
+                      />
+                      <span
+                        class="checkbox__span text text_grey-shade aside-left__checkbox-span"
+                      >
+                        Белый
+                      </span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li class="aside-left__item aside-left__item_2">
+                <h3
+                  class="title title_tiny title_semi-bold title_grey-shade aside-left__subtitle aside-left__subtitle_2"
+                >
+                  Категория
+                </h3>
+                <ul class="list-reset aside-left__sublist">
+                  <li class="aside-left__subitem">
+                    <label class="checkbox aside-left__checkbox-label">
+                      <input
+                        class="checkbox__input aside-left__checkbox-input"
+                        type="checkbox"
+                        name="type-sofas"
+                        checked
+                      />
+                      <span
+                        class="checkbox__span text text_grey-shade aside-left__checkbox-span"
+                      >
+                        Диваны
+                      </span>
+                    </label>
+                  </li>
+                  <li class="aside-left__subitem">
+                    <label class="checkbox aside-left__checkbox-label">
+                      <input
+                        class="checkbox__input aside-left__checkbox-input"
+                        type="checkbox"
+                        name="type-chairs"
+                      />
+                      <span
+                        class="checkbox__span text text_grey-shade aside-left__checkbox-span"
+                      >
+                        Кресла
+                      </span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li class="aside-left__item aside-left__item_3">
+                <h3
+                  class="title title_tiny title_semi-bold title_grey-shade aside-left__subtitle aside-left__subtitle_3"
+                >
+                  Цена
+                </h3>
+                <span class="text text_grey-shade aside-left__price"> от </span>
+                <label class="aside-left__label">
+                  <span class="visually-hidden"> Минимальная цена </span>
+                  <input
+                    class="input input_short aside-left__input"
+                    type="number"
+                    name="price-min"
+                    min="0"
+                    placeholder="2000"
+                  />
+                </label>
+                <span class="text text_grey-shade aside-left__price"> до </span>
+                <label class="aside-left__label">
+                  <span class="visually-hidden"> Максимальная цена </span>
+                  <input
+                    class="input input_short aside-left__input"
+                    type="number"
+                    name="price-max"
+                    min="0"
+                    placeholder="150 000"
+                  />
+                </label>
+              </li>
+            </ul>
+            <div class="mini-oxford aside-left__div">
+              <div class="mini-oxford__box">
+                <h2
+                  class="font-second title title_small title_gold title_black mini-oxford__title"
+                >
+                  Оксфорд 1950
+                </h2>
+                <p class="text text_grey mini-oxford__text">
+                  Новая коллекция изысканных кресел
+                </p>
+                <div class="mini-oxford__wrap">
+                  <a
+                    class="arrow-link block text text_bold text_medium-purple link link_underline"
+                    href="#"
+                  >
+                    В&nbsp;каталог
+                    <svg class="arrow-link__svg">
+                      <use
+                        xlink:href="img/sprite.svg#card-categorie-arrow"
+                      ></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <div class="catalog__box">
+            <h1
+              class="title title_small catalog__title catalog__title_media-1920"
+            >
+              Каталог
+            </h1>
+            <ul class="list-reset catalog__list">
+              <li class="catalog__item catalog__item_item1">
+                <div class="card catalog__div catalog__div_item1">
+                  <div
+                    class="card__holder catalog__holder catalog__holder_item1"
+                  >
+                    <picture
+                      class="block card__pic catalog__pic catalog__pic_item1"
+                    >
+                      <source
+                        media="(max-width: 320px)"
+                        srcset="img/rating-1-320.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        class="card__img"
+                        src="img/rating-1-1920.webp"
+                        loading="lazy"
+                        alt="Диван кожаный R-94, цвет чёрный"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__inner catalog__inner catalog__inner_item1">
+                    <h3
+                      class="title title_small card__title catalog__subtitle catalog__subtitle_item1"
+                    >
+                      Диван кожаный
+                      <span
+                        class="block card__model catalog__model catalog__model_item1"
+                      >
+                        &#8220;R-94&#8221;
+                      </span>
+                    </h3>
+                    <span class="visually-hidden"> Цена </span>
+                    <span
+                      class="text text_grey-shade card__price catalog__price catalog__price_item1"
+                    >
+                      94&nbsp;990 руб
+                    </span>
+                    <div class="card__wrap catalog__wrap catalog__wrap_item1">
+                      <a
+                        class="btn btn_ambush card__link catalog__link catalog__link_item1"
+                        href="#"
+                      >
+                        Купить
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="rating text text_crusta card__reting catalog__reting catalog__reting_item1"
+                  >
+                    <span class="visually-hidden"> Рейтинг </span>
+                    5,0
+                  </div>
+                </div>
+              </li>
+
+              <li class="catalog__item catalog__item_item2">
+                <div class="card catalog__div catalog__div_item2">
+                  <div
+                    class="card__holder catalog__holder catalog__holder_item2"
+                  >
+                    <picture
+                      class="block card__pic catalog__pic catalog__pic_item2"
+                    >
+                      <source
+                        media="(max-width: 320px)"
+                        srcset="img/rating-2-320.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        class="card__img"
+                        src="img/rating-2-1920.webp"
+                        loading="lazy"
+                        alt="Диван апартековый T-75, цвет коричневый"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__inner catalog__inner catalog__inner_item2">
+                    <h3
+                      class="title title_small card__title catalog__subtitle catalog__subtitle_item2"
+                    >
+                      Диван апартековый
+                      <span
+                        class="block card__model catalog__model catalog__model_item2"
+                      >
+                        &#8220;T-75&#8221;
+                      </span>
+                    </h3>
+                    <span class="visually-hidden"> Цена </span>
+                    <span
+                      class="text text_grey-shade card__price catalog__price catalog__price_item2"
+                    >
+                      69&nbsp;990 руб
+                    </span>
+                    <div class="card__wrap catalog__wrap catalog__wrap_item2">
+                      <a
+                        class="btn btn_ambush card__link catalog__link catalog__link_item2"
+                        href="#"
+                      >
+                        Купить
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="rating text text_crusta card__reting catalog__reting catalog__reting_item2"
+                  >
+                    <span class="visually-hidden"> Рейтинг </span>
+                    4,9
+                  </div>
+                </div>
+              </li>
+
+              <li class="catalog__item catalog__item_item3">
+                <div class="card catalog__div catalog__div_item3">
+                  <div
+                    class="card__holder catalog__holder catalog__holder_item3"
+                  >
+                    <picture
+                      class="block card__pic catalog__pic catalog__pic_item3"
+                    >
+                      <source
+                        media="(max-width: 320px)"
+                        srcset="img/rating-3-320.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        class="card__img"
+                        src="img/rating-3-1920.webp"
+                        loading="lazy"
+                        alt="Диван тканевый D-31, цвет синий"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__inner catalog__inner catalog__inner_item3">
+                    <h3
+                      class="title title_small card__title catalog__subtitle catalog__subtitle_item3"
+                    >
+                      Диван тканевый
+                      <span class="block card__model">
+                        &#8220;D-31&#8221;
+                      </span>
+                    </h3>
+                    <span class="visually-hidden"> Цена </span>
+                    <span
+                      class="text text_grey-shade card__price catalog__price catalog__price_item3"
+                    >
+                      28&nbsp;490 руб
+                    </span>
+                    <div class="card__wrap catalog__wrap catalog__wrap_item3">
+                      <a
+                        class="btn btn_ambush card__link catalog__link catalog__link_item3"
+                        href="cardProduct.html"
+                      >
+                        Купить
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="rating text text_crusta card__reting catalog__reting catalog__reting_item3"
+                  >
+                    <span class="visually-hidden"> Рейтинг </span>
+                    4,8
+                  </div>
+                </div>
+              </li>
+
+              <li class="catalog__item catalog__item_item4">
+                <div class="card catalog__div catalog__div_item4">
+                  <div
+                    class="card__holder catalog__holder catalog__holder_item4"
+                  >
+                    <picture
+                      class="block card__pic catalog__pic catalog__pic_item4"
+                    >
+                      <source
+                        media="(max-width: 320px)"
+                        srcset="img/rating-4-320.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        class="card__img"
+                        src="img/rating-4-1920.webp"
+                        loading="lazy"
+                        alt="Диван велюровый Y-68, цвет светло оранжевый"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__inner catalog__inner catalog__inner_item4">
+                    <h3
+                      class="title title_small card__title catalog__subtitle catalog__subtitle_item4"
+                    >
+                      Диван велюровый
+                      <span
+                        class="block card__model catalog__model catalog__model_item4"
+                      >
+                        &#8220;Y-68&#8221;
+                      </span>
+                    </h3>
+                    <span class="visually-hidden"> Цена </span>
+                    <span
+                      class="text text_grey-shade card__price catalog__price catalog__price_item4"
+                    >
+                      22&nbsp;990 руб
+                    </span>
+                    <div class="card__wrap catalog__wrap catalog__wrap_item4">
+                      <a
+                        class="btn btn_ambush card__link catalog__link catalog__link_item4"
+                        href="#"
+                      >
+                        Купить
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="rating text text_crusta card__reting catalog__reting catalog__reting_item4"
+                  >
+                    <span class="visually-hidden"> Рейтинг </span>
+                    4,8
+                  </div>
+                </div>
+              </li>
+
+              <li class="catalog__item catalog__item_item5">
+                <div class="card catalog__div catalog__div_item5">
+                  <div
+                    class="card__holder catalog__holder catalog__holder_item5"
+                  >
+                    <picture
+                      class="block card__pic catalog__pic catalog__pic_item5"
+                    >
+                      <source
+                        media="(max-width: 320px)"
+                        srcset="img/rating-5-320.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        class="card__img"
+                        src="img/rating-5-1920.webp"
+                        loading="lazy"
+                        alt="Диван из шинила W-95, цвет светло жёлтый"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__inner catalog__inner catalog__inner_item5">
+                    <h3
+                      class="title title_small card__title catalog__subtitle catalog__subtitle_item5"
+                    >
+                      Диван из шинила
+                      <span
+                        class="block card__model catalog__model catalog__model_item5"
+                      >
+                        &#8220;W-95&#8221;
+                      </span>
+                    </h3>
+                    <span class="visually-hidden"> Цена </span>
+                    <span
+                      class="text text_grey-shade card__price catalog__price catalog__price_item5"
+                    >
+                      22&nbsp;990 руб
+                    </span>
+                    <div class="card__wrap catalog__wrap catalog__wrap_item5">
+                      <a
+                        class="btn btn_ambush card__link catalog__link catalog__link_item5"
+                        href="#"
+                      >
+                        Купить
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="rating text text_crusta card__reting catalog__reting catalog__reting_item5"
+                  >
+                    <span class="visually-hidden"> Рейтинг </span>
+                    4,8
+                  </div>
+                </div>
+              </li>
+
+              <li class="catalog__item catalog__item_item6">
+                <div class="card catalog__div catalog__div_item6">
+                  <div
+                    class="card__holder catalog__holder catalog__holder_item6"
+                  >
+                    <picture
+                      class="block card__pic catalog__pic catalog__pic_item6"
+                    >
+                      <source
+                        media="(max-width: 320px)"
+                        srcset="img/rating-6-320.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        class="card__img"
+                        src="img/rating-6-1920.webp"
+                        loading="lazy"
+                        alt="Диван флоковый G-41, цвет бежевый"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__inner catalog__inner catalog__inner_item6">
+                    <h3
+                      class="title title_small card__title catalog__subtitle catalog__subtitle_item6"
+                    >
+                      Диван флоковый
+                      <span
+                        class="block card__model catalog__model catalog__model_item6"
+                      >
+                        &#8220;G-41&#8221;
+                      </span>
+                    </h3>
+                    <span class="visually-hidden"> Цена </span>
+                    <span
+                      class="text text_grey-shade card__price catalog__price catalog__price_item6"
+                    >
+                      17&nbsp;990 руб
+                    </span>
+                    <div class="card__wrap catalog__wrap catalog__wrap_item6">
+                      <a
+                        class="btn btn_ambush card__link catalog__link catalog__link_item6"
+                        href="#"
+                      >
+                        Купить
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="rating text text_crusta card__reting catalog__reting catalog__reting_item6"
+                  >
+                    <span class="visually-hidden"> Рейтинг </span>
+                    4,8
+                  </div>
+                </div>
+              </li>
+
+              <li class="catalog__item catalog__item_item7">
+                <div class="card catalog__div catalog__div_item7">
+                  <div
+                    class="card__holder catalog__holder catalog__holder_item7"
+                  >
+                    <picture
+                      class="block card__pic catalog__pic catalog__pic_item7"
+                    >
+                      <source
+                        media="(max-width: 320px)"
+                        srcset="img/rating-7-320.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        class="card__img"
+                        src="img/rating-7-1920.webp"
+                        loading="lazy"
+                        alt="Диван шиниловый V-43, цвет серый"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__inner catalog__inner catalog__inner_item7">
+                    <h3
+                      class="title title_small card__title catalog__subtitle catalog__subtitle_item7"
+                    >
+                      Диван шиниловый
+                      <span
+                        class="block card__model catalog__model catalog__model_item7"
+                      >
+                        &#8220;V-43&#8221;
+                      </span>
+                    </h3>
+                    <span class="visually-hidden"> Цена </span>
+                    <span
+                      class="text text_grey-shade card__price catalog__price catalog__price_item7"
+                    >
+                      19&nbsp;990 руб
+                    </span>
+                    <div class="card__wrap catalog__wrap catalog__wrap_item7">
+                      <a
+                        class="btn btn_ambush card__link catalog__link catalog__link_item7"
+                        href="#"
+                      >
+                        Купить
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="rating text text_crusta card__reting catalog__reting catalog__reting_item7"
+                  >
+                    <span class="visually-hidden"> Рейтинг </span>
+                    4,8
+                  </div>
+                </div>
+              </li>
+
+              <li class="catalog__item catalog__item_item8">
+                <div class="card catalog__div catalog__div_item8">
+                  <div
+                    class="card__holder catalog__holder catalog__holder_item8"
+                  >
+                    <picture
+                      class="block card__pic catalog__pic catalog__pic_item8"
+                    >
+                      <source
+                        media="(max-width: 320px)"
+                        srcset="img/rating-8-320.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        class="card__img"
+                        src="img/rating-8-1920.webp"
+                        loading="lazy"
+                        alt="Диван велюровый S-99, цвет жёлтая охра"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__inner catalog__inner catalog__inner_item8">
+                    <h3
+                      class="title title_small card__title catalog__subtitle catalog__subtitle_item8"
+                    >
+                      Диван велюровый
+                      <span
+                        class="block card__model catalog__model catalog__model_item8"
+                      >
+                        &#8220;S-99&#8221;
+                      </span>
+                    </h3>
+                    <span class="visually-hidden"> Цена </span>
+                    <span
+                      class="text text_grey-shade card__price catalog__price catalog__price_item8"
+                    >
+                      19&nbsp;990 руб
+                    </span>
+                    <div class="card__wrap catalog__wrap catalog__wrap_item8">
+                      <a
+                        class="btn btn_ambush card__link catalog__link catalog__link_item8"
+                        href="#"
+                      >
+                        Купить
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="rating text text_crusta card__reting catalog__reting catalog__reting_item8"
+                  >
+                    <span class="visually-hidden"> Рейтинг </span>
+                    4,7
+                  </div>
+                </div>
+              </li>
+
+              <li class="catalog__item catalog__item_item9">
+                <div class="card catalog__div catalog__div_item9">
+                  <div
+                    class="card__holder catalog__holder catalog__holder_item9"
+                  >
+                    <picture
+                      class="block card__pic catalog__pic catalog__pic_item9"
+                    >
+                      <source
+                        media="(max-width: 320px)"
+                        srcset="img/rating-9-320.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        class="card__img"
+                        src="img/rating-9-1920.webp"
+                        loading="lazy"
+                        alt="Диван из кожзама F-85, цвет зелёный"
+                      />
+                    </picture>
+                  </div>
+                  <div class="card__inner catalog__inner catalog__inner_item9">
+                    <h3
+                      class="title title_small card__title catalog__subtitle catalog__subtitle_item9"
+                    >
+                      Диван из кожзама
+                      <span
+                        class="block card__model catalog__model catalog__model_item9"
+                      >
+                        &#8220;F-85&#8221;
+                      </span>
+                    </h3>
+                    <span class="visually-hidden"> Цена </span>
+                    <span
+                      class="text text_grey-shade card__price catalog__price catalog__price_item9"
+                    >
+                      26&nbsp;990 руб
+                    </span>
+                    <div class="card__wrap catalog__wrap catalog__wrap_item9">
+                      <a
+                        class="btn btn_ambush card__link catalog__link catalog__link_item9"
+                      >
+                        Купить
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="rating text text_crusta card__reting catalog__reting catalog__reting_item9"
+                  >
+                    <span class="visually-hidden"> Рейтинг </span>
+                    4,7
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <nav class="pagination catalog__pagination">
+              <ul class="list-reset pagination__list">
+                <li class="pagination__item pagination__item_1">
+                  <span
+                    class="text text_semi-bold text_white pagination__active"
+                    aria-current="page"
+                  >
+                    1
+                  </span>
+                </li>
+                <li class="pagination__item pagination__item_2">
+                  <a
+                    class="btn btn_ambush text text_semi-bold text_medium-purple pagination__link"
+                    href="#"
+                    aria-label="Страница 2"
+                  >
+                    2
+                  </a>
+                </li>
+                <li class="none pagination__item pagination__item_3">
+                  <a
+                    class="btn btn_ambush text text_semi-bold text_medium-purple pagination__link pagination__link"
+                    href="#"
+                    aria-label="Страница 3"
+                  >
+                    3
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container footer__container">
+          <div class="footer__left">
+            <a href="index.html">
+              <picture class="block footer__pic">
+                <img
+                  class="footer__img"
+                  src="img/logo-1920.webp"
+                  loading="lazy"
+                  alt="SitDownPls"
+                />
+              </picture>
+            </a>
+            <ul class="list-reset footer__social-list">
+              <li class="footer__social-item">
+                <a
+                  class="block footer__social-link"
+                  href="#"
+                  aria-label="Мы в одноклассниках"
+                >
+                  <svg class="footer__social-icon footer__social-icon_ok">
+                    <use xlink:href="img/sprite.svg#ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a
+                  class="block footer__social-link"
+                  href="#"
+                  aria-label="Мы в вконтакте"
+                >
+                  <svg class="footer__social-icon footer__social-icon_vk">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <nav class="footer-menu footer__nav">
+            <ul class="list-reset footer-menu__list">
+              <li class="footer-menu__item footer-menu__item_1">
+                <h3 class="title title_tiny footer-menu__title">О&nbsp;нас</h3>
+                <ul class="list-reset footer-menu__sublist">
+                  <li class="footer-menu__subitem">
+                    <a
+                      class="text text_small text_grey link link_grey footer-menu__link"
+                      href="#"
+                    >
+                      О&nbsp;компании
+                    </a>
+                  </li>
+                  <li class="footer-menu__subitem">
+                    <a
+                      class="text text_small text_grey link link_grey footer-menu__link"
+                      href="#"
+                    >
+                      Блог
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-menu__item footer-menu__item_2">
+                <h3 class="title title_tiny footer-menu__title">Услуги</h3>
+                <ul class="list-reset footer-menu__sublist">
+                  <li class="footer-menu__subitem">
+                    <a
+                      class="text text_small text_grey link link_grey footer-menu__link"
+                      href="#"
+                    >
+                      Доставка
+                    </a>
+                  </li>
+                  <li class="footer-menu__subitem">
+                    <a
+                      class="text text_small text_grey link link_grey footer-menu__link"
+                      href="#"
+                    >
+                      Рассрочка и&nbsp;кредит
+                    </a>
+                  </li>
+                  <li class="footer-menu__subitem">
+                    <a
+                      class="text text_small text_grey link link_grey footer-menu__link"
+                      href="#"
+                    >
+                      Сборка и&nbsp;установка
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-menu__item footer-menu__item_3">
+                <h3 class="title title_tiny footer-menu__title">
+                  Связь с&nbsp;нами
+                </h3>
+                <ul class="list-reset footer-menu__sublist">
+                  <li class="footer-menu__subitem">
+                    <a
+                      class="text text_small text_grey link link_grey footer-menu__link"
+                      href="index.html#feedback"
+                    >
+                      Обратная связь
+                    </a>
+                  </li>
+                  <li class="footer-menu__subitem">
+                    <a
+                      class="text text_small text_grey link link_grey footer-menu__link"
+                      href="#"
+                    >
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-menu__item footer-menu__item_4">
+                <h3 class="title title_tiny footer-menu__title">
+                  Сотрудничество
+                </h3>
+                <ul class="list-reset footer-menu__sublist">
+                  <li class="footer-menu__subitem">
+                    <a
+                      class="text text_small text_grey link link_grey footer-menu__link"
+                      href="cooperation.html#suppliers"
+                    >
+                      Поставщикам
+                    </a>
+                  </li>
+                  <li class="footer-menu__subitem">
+                    <a
+                      class="text text_small text_grey link link_grey footer-menu__link"
+                      href="#"
+                    >
+                      Оптовикам
+                    </a>
+                  </li>
+                  <li class="footer-menu__subitem">
+                    <a
+                      class="text text_small text_grey link link_grey footer-menu__link"
+                      href="#"
+                    >
+                      Карьера
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <small class="text text_small text_grey footer__copyright">
+        SDP®&nbsp;&nbsp;&nbsp;<time datetime="2021">2011</time>-<time
+          datetime="2021"
+          >2021</time
+        >
+      </small>
+    </footer>
+  </body>
+</html>

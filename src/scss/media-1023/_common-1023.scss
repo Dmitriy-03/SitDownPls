@@ -1,0 +1,165 @@
+.title {
+  &_small {
+    margin: 18px 0 13px;
+  }
+}
+
+.aside {
+  padding: 15px 0 16px 4px;
+
+  &__list {
+    gap: $aside-gap;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+}
+
+.aside-left {
+  &__subtitle {
+    margin-bottom: 11px;
+
+    &_3 {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__sublist {
+    gap: $aside-left-sublist-gap;
+  }
+
+  &__checkbox-span {
+    padding-left: 32px;
+  }
+}
+
+.breadcrumb {
+  padding: 0 4px;
+}
+
+.btn {
+  &_big {
+    padding: 19px 48px;
+  }
+}
+
+.card-categorie {
+  padding: 25px 0 10px;
+
+  &__list {
+    margin: 0;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+  }
+
+  &__pic {
+    margin-bottom: 33px;
+
+    &_1 {
+      margin-bottom: 27px;
+    }
+  }
+}
+
+.footer-menu {
+  &__list {
+    gap: $footer-menu-gap;
+  }
+}
+
+.guarantees {
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    margin: 0 0 15px;
+  }
+
+  &__text,
+  &__desc {
+    max-width: 100%;
+  }
+
+  &__br {
+    display: none;
+  }
+}
+
+.nav {
+  padding: 8px 0px 6px;
+
+  &__list {
+    gap: $nav-gap;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+
+  &__link {
+    font-size: $text-normal;
+  }
+}
+
+.pagination {
+  &__item {
+    &_3 {
+      display: block;
+    }
+  }
+}
+
+.phone {
+  padding-left: 4px;
+}
+
+.search {
+  padding-top: 6px;
+
+  &__icon {
+    &_magnifier {
+      top: 26px;
+    }
+  }
+
+  &__btn {
+    top: 20px;
+  }
+}
+
+.suppliers {
+  &__text {
+    max-width: 100%;
+  }
+
+  &__title {
+    margin: 0 0 16px;
+  }
+}
+
+.you-get {
+  &__title {
+    margin: 0;
+    margin-bottom: 9px;
+  }
+
+  &__item {
+    max-width: 100%;
+  }
+}
+
+.your-benefits {
+  &__text {
+    max-width: 99.7%;
+  }
+
+  &__title {
+    margin: 0 0 16px;
+  }
+}

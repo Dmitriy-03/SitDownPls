@@ -1,0 +1,162 @@
+.title {
+  &_small {
+    margin: 15px 0 13px;
+  }
+}
+
+.aside-left {
+  padding: 2px 0 0px;
+
+  &__title {
+    @include visually-hidden;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: $aside-left-gap;
+    margin-bottom: 0;
+  }
+
+  &__item {
+    min-width: 146px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__subtitle {
+    &_2 {
+      margin-bottom: 11px;
+    }
+
+    &_3 {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__div {
+    display: none;
+  }
+}
+
+.btn {
+  &_big {
+    padding: 19px 48px 18px 48px;
+  }
+}
+
+.card {
+  &__discount {
+    padding: 9px 5px 9px 19px;
+  }
+}
+
+.card-categorie {
+  &__list {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    padding-bottom: 24px;
+
+    &_1 {
+      padding-bottom: 19px;
+    }
+  }
+
+  &__pic {
+    margin-bottom: auto;
+    height: 296px;
+
+    &_1 {
+      height: 308px;
+    }
+
+    &_4 {
+      left: 0;
+    }
+  }
+}
+
+.footer-menu {
+  &__list {
+    gap: $footer-menu-gap;
+    padding: 2px 3px 2px 0;
+  }
+}
+
+.guarantees {
+  &__text {
+    max-width: 87.8%;
+  }
+
+  &__title {
+    margin: 0 0 15px;
+  }
+
+  &__desc {
+    max-width: 68%;
+  }
+}
+
+.logo {
+  padding: 11px 0 0;
+}
+
+.nav {
+  padding: 15px 2px 6px 1px;
+
+  &__list {
+    gap: $nav-gap;
+  }
+}
+
+.phone {
+  padding: 19px 0 0px;
+}
+
+.search {
+  &__icon {
+    &_magnifier {
+      top: 29px;
+    }
+  }
+
+  &__btn {
+    top: 23px;
+    right: 32px;
+  }
+}
+
+.suppliers {
+  &__text {
+    max-width: 88%;
+  }
+
+  &__title {
+    margin: 0 0 16px;
+  }
+}
+
+.you-get {
+  &__item {
+    max-width: 66%;
+  }
+
+  &__title {
+    margin: 0 0 8px;
+  }
+}
+
+.your-benefits {
+  &__text {
+    max-width: 91%;
+  }
+
+  &__title {
+    margin: 0 0 16px;
+  }
+}

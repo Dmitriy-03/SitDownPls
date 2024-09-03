@@ -1,0 +1,348 @@
+.container {
+  padding: 0 72px;
+}
+
+.cooperation {
+  padding: 2px 0 32px;
+}
+
+.feedback {
+  padding: 35px 0 68px;
+
+  &__container {
+    grid-template-columns: repeat(6, 1fr);
+    gap: $feedback-gap;
+
+    &::after {
+      margin-top: 25px;
+      top: 0px;
+      left: 0px;
+      grid-column: span 2;
+      min-height: 444px;
+      background-image: url("../img/feedback-768.webp");
+    }
+  }
+
+  &__left {
+    grid-column: span 4;
+    padding-bottom: 3px;
+  }
+
+  &__btn {
+    padding: 16px 34px 15px 33px;
+  }
+
+  &__wrap {
+    margin-bottom: 12px;
+  }
+}
+
+.footer {
+  &__container {
+    padding: 0px 71px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: $footer-gap;
+  }
+
+  &__top {
+    padding: 23px 0 20px;
+  }
+
+  &__left,
+  &__nav {
+    grid-column: span 6;
+  }
+
+  &__left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__pic {
+    margin-right: auto;
+    margin-bottom: 0;
+    padding-top: 2px;
+  }
+
+  &__social-list {
+    padding: 0 50px;
+  }
+
+  &__copyright {
+    padding-left: 0px;
+  }
+
+  &__nav {
+    justify-self: center;
+  }
+}
+
+.header {
+  padding-bottom: 28px;
+
+  &_index {
+    padding-bottom: 32px;
+  }
+
+  &__container {
+    grid-template-columns: repeat(6, 1fr);
+    gap: $header-gap;
+    padding: 0 68px;
+  }
+
+  &__phone,
+  &__aside,
+  &__nav,
+  &__search {
+    grid-column: span 6;
+  }
+
+  &__logo,
+  &__box {
+    grid-column: span 3;
+  }
+
+  &__logo {
+    order: 3;
+  }
+
+  &__box {
+    order: 4;
+    padding: 7px 4px 0 0;
+  }
+
+  &__cart-count {
+    padding: 2px 4px 2px;
+  }
+}
+
+.hero {
+  background-image: url("../img/hero-768.webp");
+}
+
+.high-rating {
+  &__list {
+    grid-template-columns: repeat(6, 1fr);
+    gap: $high-rating-gap;
+  }
+
+  &__item {
+    grid-column: span 3;
+  }
+
+  &__holder {
+    &_item4 {
+      padding-right: 0;
+    }
+  }
+
+  &__link {
+    padding: 16px 33px 15px;
+  }
+}
+
+.oxford {
+  background-image: url("../img/oxford-768.webp");
+
+  &__container {
+    padding: 0 36px;
+  }
+
+  &__link {
+    padding: 19px 30px;
+  }
+}
+
+.product {
+  padding: 1px 0 25px;
+
+  &__container {
+    grid-template-columns: repeat(6, 1fr);
+    gap: $product-gap;
+  }
+
+  &__title {
+    margin: 0 0 4px;
+  }
+
+  &__pic {
+    left: 0px;
+    grid-column: span 6;
+    justify-self: center;
+    padding-top: 3px;
+  }
+
+  &__buy {
+    grid-column: span 6;
+    padding: 49px 0 35px 1px;
+  }
+
+  &__buy-btn {
+    padding: 16px 34px 16px 33px;
+  }
+
+  &__desc {
+    padding-bottom: 31px;
+  }
+
+  &__about {
+    padding-top: 7px;
+  }
+
+  &__settings {
+    grid-column: span 6;
+  }
+
+  &__subtitle {
+    margin-bottom: 4px;
+  }
+
+  &__left {
+    width: calc(100% - 216px - 4px);
+  }
+}
+
+.similar {
+  padding: 10px 0 70px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 22px;
+  }
+
+  &__list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  &__item {
+    grid-column: span 3;
+
+    &_3 {
+      display: none;
+    }
+  }
+}
+
+.special {
+  &__title {
+    margin-bottom: 23px;
+  }
+
+  &__list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  &__item {
+    &_3 {
+      display: none;
+    }
+  }
+
+  &__link {
+    padding: 16px 33px 15px;
+
+    &_item2 {
+      padding: 16px 34px 15px;
+    }
+  }
+}
+
+.top-categories {
+  &__list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  &__item {
+    min-height: 511px;
+
+    &_1 {
+      grid-column: span 6;
+    }
+
+    &_2 {
+      order: 3;
+    }
+  }
+}
+
+.useful {
+  &__title {
+    margin-bottom: 22px;
+  }
+
+  &__subtitle {
+    padding: 11px 27px 18px 30px;
+
+    &_2 {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  &__item {
+    grid-column: span 3;
+
+    &_3 {
+      display: none;
+    }
+  }
+}
+
+.catalog {
+  padding: 7px 0 70px;
+
+  &__container {
+    gap: $catalog-gap;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  &__item {
+    grid-column: span 3;
+
+    &_item3 {
+      order: 4;
+    }
+
+    &_item4 {
+      order: 3;
+    }
+
+    &_item5 {
+      order: 5;
+    }
+
+    &_item6 {
+      order: 6;
+    }
+
+    &_item7,
+    &_item8,
+    &_item9 {
+      display: none;
+    }
+  }
+
+  &__pic {
+    &_item5 {
+      position: relative;
+      left: -1px;
+    }
+  }
+}
+
+.checkbox {
+  &__span {
+    padding-left: 22px;
+  }
+}
